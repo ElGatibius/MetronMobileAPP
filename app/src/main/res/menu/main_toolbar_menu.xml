@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_hamburguer_menu"
+        android:title="Menú"
+        android:icon="@drawable/ic_hamburguer_menu"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_profile"
+        android:title="Perfil"
+        android:icon="@drawable/ic_perfil"
+        app:showAsAction="ifRoom" />
+</menu>
+    

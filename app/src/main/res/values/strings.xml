@@ -53,4 +53,6 @@
     <string name="registerTextConfirmPass">Confirma tu contraseña</string>
     <string name="registerTextDescription">INGRESA LOS SIGUIENTES DATOS PARA COMPLETAR EL REGISTRO</string>
     <string name="registerBtnText">Registrarme</string>
+    <string name="menu_hamburguer_home">Agendar Citas</string>
+    <string name="menu_hamburguer_appointments">Citas Agendadas</string>
 </resources>

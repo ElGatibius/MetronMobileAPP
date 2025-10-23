@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity"
+    android:background="@color/fondoGris">
+
+
+    <ImageView
+        android:id="@+id/splashLogoMetron"
+        android:layout_width="162dp"
+        android:layout_height="156dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.827"
+        app:srcCompat="@mipmap/metron_logo" />
+
+    <ImageView
+        android:id="@+id/splashNombreMetron"
+        android:layout_width="312dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/metron_name" />
+
+    <TextView
+        android:id="@+id/splashTextDesarrolladores"
+        android:layout_width="172dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="224dp"
+        android:fontFamily="@font/adamina"
+        android:text="@string/splashDesarrolladoPor"
+        android:textAlignment="center"
+        android:textColor="@color/vinoTinto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/splashNombreMetron" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForgotPassActivity"
+    android:background="@color/fondoGris">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/fondoGris"
+        android:padding="30dp">
+
+        <ImageView
+            android:id="@+id/forgotPassLogoMetron"
+            android:layout_width="202dp"
+            android:layout_height="218dp"
+            app:srcCompat="@mipmap/metron_logo"
+            tools:layout_editor_absoluteX="104dp"
+            tools:layout_editor_absoluteY="63dp"
+            android:layout_marginTop="80dp"/>
+
+        <ImageView
+            android:id="@+id/forgotPassMetronName"
+            android:layout_width="177dp"
+            android:layout_height="45dp"
+            app:srcCompat="@drawable/metron_name"
+            tools:layout_editor_absoluteX="117dp"
+            tools:layout_editor_absoluteY="281dp" />
+
+        <TextView
+            android:id="@+id/forgotPassTextHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:fontFamily="@font/baskervville"
+            android:text="@string/forgotPassTextHint"/>
+
+        <EditText
+            android:id="@+id/forgotPassEditTextEmail"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="274dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            tools:layout_editor_absoluteX="70dp"
+            tools:layout_editor_absoluteY="343dp"
+            android:background="@color/inputsBackground"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/loginTextViewEmailHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baskervville"
+            android:textColor="@color/black"
+            android:text="@string/loginTextHintEmail"
+            tools:layout_editor_absoluteX="91dp"
+            tools:layout_editor_absoluteY="383dp" />
+
+        <Button
+            android:id="@+id/fogotPassButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/vinoTinto"
+            android:text="@string/fogotPassButtonText"
+            tools:layout_editor_absoluteX="138dp"
+            tools:layout_editor_absoluteY="501dp"
+            android:layout_marginTop="60dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

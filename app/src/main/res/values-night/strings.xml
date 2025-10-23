@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="splashDesarrolladoPor">Desarrollado por: \nAlejandro García\n Edwin Luque</string>
+    <string name="loginTextHintEmail">Ingresa el email asociado a tu cuenta</string>
+    <string name="loginTextPasswordHint">Ingresa tu contraseña</string>
+    <string name="loginTextLogin">Iniciar Sesion</string>
+    <string name="textNewAccountHint">No tienes cuenta?</string>
+    <string name="loginTextForgotPassword">Olvide mi contraseña</string>
+    <string name="forgotPassTextHint">Enviaremos un correo electrónico con el cual podrás reestablecer tu contraseña</string>
+    <string name="fogotPassButtonText">Recuperar contraseña</string>
+    <string name="registerHintTextRazonSocial">Razón Social</string>
+    <string name="registerNITtext">NIT</string>
+    <string name="registerEmailHit">Email</string>
+    <string name="registerPassText">Ingresa tu contraseña</string>
+    <string name="registerTextConfirmPass">Confirma tu contraseña</string>
+    <string name="registerTextDescription">INGRESA LOS SIGUIENTES DATOS PARA COMPLETAR EL REGISTRO</string>
+    <string name="registerBtnText">Registrarme</string>
+</resources>

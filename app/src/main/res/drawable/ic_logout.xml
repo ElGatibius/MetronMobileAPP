@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Círculo exterior -->
+    <path
+        android:pathData="M12,2C17.52,2 22,6.48 22,12s-4.48,10-10,10S2,17.52 2,12S6.48,2 12,2z"
+        android:strokeWidth="1.5"
+        android:fillColor="#00000000"
+        android:strokeColor="@color/vinoTinto"/>
+
+    <!-- Flecha de salida corregida -->
+    <path
+        android:pathData="M15,15.5l4,-4 -4,-4M18,11.5h-8"
+        android:strokeWidth="1.5"
+        android:strokeColor="@color/vinoTinto"
+        android:fillColor="#00000000"
+        android:strokeLinecap="round"
+        android:strokeLinejoin="round"/>
+
+    <!-- Puerta/palito vertical -->
+    <path
+        android:pathData="M9,7v10h2L11,7L9,7z"
+        android:fillColor="@color/vinoTinto"/>
+</vector>

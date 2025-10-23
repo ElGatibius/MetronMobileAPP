@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:padding="10dp"
+    android:background="@color/fondoGris">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/registerTextDescription"
+            android:layout_width="350dp"
+            android:layout_height="62dp"
+            android:fontFamily="@font/baskervville"
+            android:text="@string/registerTextDescription"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="41dp"
+            android:layout_marginBottom="30dp"/>
+
+        <EditText
+            android:id="@+id/registerEditTextRazonSocial"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="274dp"
+            android:layout_height="40dp"
+            android:background="@color/inputsBackground"
+            android:ems="10"
+            android:inputType="text"
+            tools:layout_editor_absoluteX="68dp"
+            tools:layout_editor_absoluteY="496dp" />
+
+        <TextView
+            android:id="@+id/registerTextViewRazonSocialHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baskervville"
+            android:text="@string/registerHintTextRazonSocial"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="68dp"
+            tools:layout_editor_absoluteY="536dp"
+            android:layout_marginBottom="15dp"/>
+
+        <EditText
+            android:id="@+id/registerEditTextNIT"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="274dp"
+            android:layout_height="40dp"
+            android:background="@color/inputsBackground"
+            android:ems="10"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="68dp"
+            tools:layout_editor_absoluteY="420dp" />
+
+        <TextView
+            android:id="@+id/registerTextViewNITHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baskervville"
+            android:text="@string/registerNITtext"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="68dp"
+            tools:layout_editor_absoluteY="460dp"
+            android:layout_marginBottom="15dp"/>
+
+        <EditText
+            android:id="@+id/registerEditTextEmail"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="274dp"
+            android:layout_height="40dp"
+            android:background="@color/inputsBackground"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            tools:layout_editor_absoluteX="68dp"
+            tools:layout_editor_absoluteY="345dp" />
+
+        <TextView
+            android:id="@+id/registerTextViewEmailHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baskervville"
+            android:text="@string/registerEmailHit"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="68dp"
+            tools:layout_editor_absoluteY="385dp"
+            android:layout_marginBottom="15dp"/>
+
+        <EditText
+            android:id="@+id/registerEditTextRepName"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="274dp"
+            android:layout_height="40dp"
+            android:background="@color/inputsBackground"
+            android:ems="10"
+            android:inputType="text"
+            tools:layout_editor_absoluteX="68dp"
+            tools:layout_editor_absoluteY="272dp" />
+
+        <TextView
+            android:id="@+id/registerRepNameHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baskervville"
+            android:text="Nombre del representante legal"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="68dp"
+            tools:layout_editor_absoluteY="312dp"
+            android:layout_marginBottom="15dp"/>
+
+        <EditText
+            android:id="@+id/registerEditTextPass"
+            android:layout_width="274dp"
+            android:layout_height="40dp"
+            android:background="@color/inputsBackground"
+            android:ems="10"
+            android:inputType="textPassword"
+            tools:layout_editor_absoluteX="68dp"
+            tools:layout_editor_absoluteY="193dp" />
+
+        <TextView
+            android:id="@+id/registerTextViewPassHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baskervville"
+            android:text="@string/registerPassText"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="68dp"
+            tools:layout_editor_absoluteY="233dp"
+            android:layout_marginBottom="15dp"/>
+
+        <EditText
+            android:id="@+id/registerEditTextConfirmPass"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="274dp"
+            android:layout_height="40dp"
+            android:background="@color/inputsBackground"
+            android:ems="10"
+            android:inputType="textPassword"
+            tools:layout_editor_absoluteX="68dp"
+            tools:layout_editor_absoluteY="124dp" />
+
+        <TextView
+            android:id="@+id/registerTextViewConfirmPassHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baskervville"
+            android:text="@string/registerTextConfirmPass"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="68dp"
+            tools:layout_editor_absoluteY="164dp"
+            android:layout_marginBottom="30dp"/>
+
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/vinoTinto"
+            android:text="@string/registerBtnText"
+            tools:layout_editor_absoluteX="142dp"
+            tools:layout_editor_absoluteY="616dp" />
+    </LinearLayout>
+
+
+
+</ScrollView>

@@ -19,42 +19,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        // Encontrar la Toolbar dentro del layout incluido
-        val toolbar: Toolbar = findViewById(R.id.custom_toolbar)
-        setSupportActionBar(toolbar)
-
-        // Quitar el título por defecto para usar nuestro TextView centrado
-        supportActionBar?.setDisplayShowTitleEnabled(false)
-    }
-
-    // Función para mostrar menús desplegables (Popup)
-    private fun showPopupMenu(anchor: View, menuRes: Int) {
-        val popup = PopupMenu(this, anchor)
-        popup.menuInflater.inflate(menuRes, popup.menu)
-
-        popup.setOnMenuItemClickListener { item ->
-            when (item.itemId) {
-                // Aquí manejas la navegación para cada opción
-                R.id.nav_agendar_cita -> {
-                    // navController.navigate(R.id.tu_fragment_de_agendar_cita)
-                    true
-                }
-                R.id.nav_revisar_citas -> {
-                    // navController.navigate(R.id.tu_fragment_de_revisar_citas)
-                    true
-                }
-                R.id.nav_edit_profile -> {
-                    // navController.navigate(R.id.tu_fragment_de_editar_perfil)
-                    true
-                }
-                R.id.nav_logout -> {
-                    // Lógica para cerrar sesión
-                    true
-                }
-                else -> false
-            }
-        }
-        popup.show()
     }
 }
+

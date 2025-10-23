@@ -2,4 +2,6 @@
 <resources>
     <color name="vinoTinto">#8B2635</color>
     <color name="inputsBackground">#E6E0E9</color>
+    <color name="light_background">#ECE6F0</color>
+    <color name="vinoTintoLighter">#A83232</color>
 </resources>

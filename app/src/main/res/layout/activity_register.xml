@@ -109,7 +109,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/baskervville"
-            android:text="Nombre del representante legal"
+            android:text="@string/registerRepNameHint"
             android:textColor="@color/black"
             tools:layout_editor_absoluteX="68dp"
             tools:layout_editor_absoluteY="312dp"

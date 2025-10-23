@@ -1,38 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@android:color/transparent">
+    android:layout_height="?attr/actionBarSize"
+    android:background="@drawable/toolbar_background_rounded"
+    android:elevation="0dp">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/custom_toolbar"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@drawable/toolbar_background_rounded"
-        android:layout_margin="8dp"
-        app:contentInsetStart="0dp"
-        app:contentInsetEnd="0dp"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        app:menu="@menu/main_toolbar_menu">  <!-- LÍNEA AÑADIDA AQUÍ -->
+        android:layout_height="match_parent">
 
-        <!-- Contenedor Relativo para alinear los elementos -->
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <!-- Ícono hamburguesa izquierda -->
+        <ImageButton
+            android:id="@+id/btn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_hamburguer_menu"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="12dp" />
 
-            <TextView
-                android:id="@+id/toolbar_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="Metron"
-                android:textColor="@android:color/white"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+        <!-- Título centro -->
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/baskervville"
+            android:textColor="@android:color/white"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:text="@string/metron" />
 
-        </RelativeLayout>
+        <!-- Ícono perfil derecha -->
+        <ImageButton
+            android:id="@+id/btn_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_perfil"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="12dp" />
 
-    </androidx.appcompat.widget.Toolbar>
+    </RelativeLayout>
 
-</com.google.android.material.appbar.AppBarLayout>
+</androidx.appcompat.widget.Toolbar>

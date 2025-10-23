@@ -17,4 +17,27 @@
     <string name="registerBtnText">Registrarme</string>
     <string name="menu_hamburguer_home">Agendar Citas</string>
     <string name="menu_hamburguer_appointments">Citas Agendadas</string>
+    <string name="metron">Metron</string>
+    <string name="formulario_agendamiento_titulo">Formulario de Agendamiento</string>
+    <string name="resumen_servicio">Resumen del Servicio</string>
+    <string name="fecha">Fecha</string>
+    <string name="hora">Hora</string>
+    <string name="descripcion_opcional">Descripción (opcional)</string>
+    <string name="hint_fecha">Selecciona la fecha</string>
+    <string name="hint_hora">Selecciona la hora</string>
+    <string name="hint_descripcion">Describe brevemente el problema o necesidad</string>
+    <string name="confirmar_cita">Confirmar Cita</string>
+    <string name="agendar_cita_icon">Icono agendar cita</string>
+    <string name="revisar_citas_icon">Icono revisar citas</string>
+    <string name="registerRepNameHint">Nombre del representante legal</string>
+    <string name="editar_perfil_titulo">Editar Perfil</string>
+    <string name="razon_social">Razón Social</string>
+    <string name="nit">NIT</string>
+    <string name="email">Email</string>
+    <string name="nombre_representante">Nombre del Representante</string>
+    <string name="hint_razon_social">Ingresa tu razón social</string>
+    <string name="hint_nit">Ingresa tu NIT</string>
+    <string name="hint_email">Ingresa tu email</string>
+    <string name="hint_rep_name">Ingresa el nombre del representante</string>
+    <string name="guardar_cambios">Guardar Cambios</string>
 </resources>

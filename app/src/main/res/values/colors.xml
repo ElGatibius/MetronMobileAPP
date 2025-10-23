@@ -2,8 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="fondoGris">#F8F9FA</color>
+    <color name="fondoGris">#FDFDFD</color>
     <color name="vinoTinto">#8B2635</color>
     <color name="inputsBackground">#E6E0E9</color>
+    <color name="light_background">#ECE6F0</color>
+    <color name="vinoTintoLighter">#A83232</color>
 
 </resources>

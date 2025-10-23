@@ -9,43 +9,22 @@
     <string name="loginTextForgotPassword">Olvide mi contraseña</string>
     <string name="forgotPassTextHint">Enviaremos un correo electrónico con el cual podrás reestablecer tu contraseña</string>
     <string name="fogotPassButtonText">Recuperar contraseña</string>
-
-    <string name="lorem_ipsum">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
-        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
-        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
-        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
-        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
-        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
-        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
-        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
-        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
-        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
-        bibendum, vel congue leo egestas.\n\n
-        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
-        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
-        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
-        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
-        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
-        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
-        est.\n\n
-        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
-        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
-        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
-        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
-        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
-        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
-        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
-        convallis.\n\n
-        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
-        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
-        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
-        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
-        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
-        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
-        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
-    </string>
+    <string name="titulo_tipo_agendamiento">Selecciona el tipo de agendamiento</string>
+    <string name="emergencia_titulo">Emergencia</string>
+    <string name="emergencia_descripcion">Agendamiento más rápido, pero con un mayor costo</string>
+    <string name="preventivo_titulo">Preventivo</string>
+    <string name="formulario_agendamiento_titulo">Formulario de Agendamiento</string>
+    <string name="resumen_servicio">Resumen del Servicio</string>
+    <string name="fecha">Fecha</string>
+    <string name="hora">Hora</string>
+    <string name="descripcion_opcional">Descripción (opcional)</string>
+    <string name="hint_fecha">Selecciona la fecha</string>
+    <string name="hint_hora">Selecciona la hora</string>
+    <string name="hint_descripcion">Describe brevemente el problema o necesidad</string>
+    <string name="confirmar_cita">Confirmar Cita</string>
+    <string name="preventivo_descripcion">Agenda tu cita para el mantenimiento preventivo de tus equipos</string>
+    <string name="agendar_cita_icon">Icono agendar cita</string>
+    <string name="revisar_citas_icon">Icono revisar citas</string>
     <string name="registerHintTextRazonSocial">Razón Social</string>
     <string name="registerNITtext">NIT</string>
     <string name="registerEmailHit">Email</string>
@@ -55,4 +34,17 @@
     <string name="registerBtnText">Registrarme</string>
     <string name="menu_hamburguer_home">Agendar Citas</string>
     <string name="menu_hamburguer_appointments">Citas Agendadas</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="metron">Metron</string>
+    <string name="registerRepNameHint">Nombre del representante legal</string>
+    <string name="editar_perfil_titulo">Editar Perfil</string>
+    <string name="razon_social">Razón Social</string>
+    <string name="nit">NIT</string>
+    <string name="email">Email</string>
+    <string name="nombre_representante">Nombre del Representante</string>
+    <string name="hint_razon_social">Ingresa tu razón social</string>
+    <string name="hint_nit">Ingresa tu NIT</string>
+    <string name="hint_email">Ingresa tu email</string>
+    <string name="hint_rep_name">Ingresa el nombre del representante</string>
+    <string name="guardar_cambios">Guardar Cambios</string>
 </resources>

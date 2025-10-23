@@ -50,7 +50,7 @@
                     android:id="@+id/tv_servicio_seleccionado"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Servicio: "
+                    android:text="@string/servicio"
                     android:textSize="14sp"
                     android:layout_marginTop="8dp"
                     android:textColor="@color/black" />

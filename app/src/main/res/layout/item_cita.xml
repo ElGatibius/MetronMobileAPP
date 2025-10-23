@@ -21,7 +21,7 @@
             android:id="@+id/tv_tipo_agendamiento"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Emergencia"
+            android:text="@string/emergencia_titulo"
             android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="@color/vinoTinto" />
@@ -31,7 +31,7 @@
             android:id="@+id/tv_fecha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Septiembre 11"
+            android:text="@string/fecha_cita"
             android:textSize="16sp"
             android:textColor="@color/black"
             android:layout_marginTop="4dp" />
@@ -41,7 +41,7 @@
             android:id="@+id/tv_tipo_servicio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Calibración de surtidores"
+            android:text="@string/cita_descripcion"
             android:textSize="14sp"
             android:textColor="@android:color/darker_gray"
             android:layout_marginTop="4dp" />
@@ -50,7 +50,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Toca para ver detalles →"
+            android:text="@string/toca_para_ver_detalles"
             android:textSize="12sp"
             android:textColor="@android:color/darker_gray"
             android:layout_marginTop="8dp"

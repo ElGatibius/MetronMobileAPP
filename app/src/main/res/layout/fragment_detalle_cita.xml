@@ -15,7 +15,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Detalle de la cita"
+            android:text="@string/detalle_cita_titulo"
             android:textSize="24sp"
             android:textStyle="bold"
             android:gravity="center"
@@ -43,7 +43,7 @@
                     android:id="@+id/tv_detalle_tipo_agendamiento"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Emergencia"
+                    android:text="@string/detalle_cita_Emergencia_titulo"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:textColor="@color/vinoTinto" />
@@ -53,7 +53,7 @@
                     android:id="@+id/tv_detalle_fecha_hora"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Septiembre 11 - 10:00 AM"
+                    android:text="@string/detalle_cita_cita1"
                     android:textSize="16sp"
                     android:textColor="@color/black"
                     android:layout_marginTop="8dp" />
@@ -63,7 +63,7 @@
                     android:id="@+id/tv_detalle_servicio"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Calibración de surtidores"
+                    android:text="@string/detalle_cita_citaEj2_titulo"
                     android:textSize="16sp"
                     android:textColor="@color/black"
                     android:layout_marginTop="8dp" />
@@ -73,7 +73,7 @@
                     android:id="@+id/tv_detalle_ubicacion"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="EDS Suba"
+                    android:text="@string/eds_suba"
                     android:textSize="16sp"
                     android:textColor="@color/black"
                     android:layout_marginTop="8dp" />
@@ -82,7 +82,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Descripción:"
+                    android:text="@string/detalle_cita_descripcion"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:textColor="@color/black"
@@ -92,7 +92,7 @@
                     android:id="@+id/tv_detalle_descripcion"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Problema con la medición en surtidor #3"
+                    android:text="@string/problema_con_la_medici_n_en_surtidor_3"
                     android:textSize="14sp"
                     android:textColor="@color/black"
                     android:layout_marginTop="4dp"
@@ -102,7 +102,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Costo de la visita:"
+                    android:text="@string/costo_de_la_visita"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:textColor="@color/black"
@@ -112,7 +112,7 @@
                     android:id="@+id/tv_detalle_costo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="$150.000"
+                    android:text="@string/costo"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:textColor="@color/vinoTinto"

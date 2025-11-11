@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_admin_dashboard"
+        android:title="Dashboard Admin"
+        android:icon="@drawable/ic_dashboard" />
+    <item android:id="@+id/nav_gestion_citas"
+        android:title="Gestión de Citas"
+        android:icon="@drawable/ic_calendar_home" />
+    <item android:id="@+id/nav_gestion_clientes"
+        android:title="Gestión de Clientes"
+        android:icon="@drawable/ic_users" />
+    <item android:id="@+id/nav_reportes"
+        android:title="Reportes"
+        android:icon="@drawable/ic_reportes" />
+    <item android:id="@+id/nav_agendar_cita"
+        android:title="Agendar Cita"
+        android:icon="@drawable/ic_agendar_cita" />
+    <item android:id="@+id/nav_revisar_citas"
+        android:title="Revisar Citas"
+        android:icon="@drawable/ic_revisar_citas" />
+</menu>

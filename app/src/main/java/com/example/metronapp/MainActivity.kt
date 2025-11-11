@@ -1,5 +1,7 @@
 package com.example.metronapp
 
+import android.content.Context
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.ImageButton
@@ -7,17 +9,19 @@ import android.widget.PopupMenu
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.example.metronapp.fragments.AgendarCitaFragment
-import com.example.metronapp.fragments.EditarPerfilFragment
-import com.example.metronapp.fragments.HomeFragment
-import com.example.metronapp.fragments.RevisarCitasFragment
-
+import com.example.metronapp.fragments.*
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var sharedPreferences: SharedPreferences
+    private var isAdmin: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        sharedPreferences = getSharedPreferences("UserName", Context.MODE_PRIVATE)
+        isAdmin = sharedPreferences.getBoolean("is_admin", false)
 
         setupToolbar()
         loadInitialFragment()
@@ -44,7 +48,15 @@ class MainActivity : AppCompatActivity() {
 
     private fun showHamburgerMenu(view: android.view.View) {
         val popup = PopupMenu(this, view)
-        popup.menuInflater.inflate(R.menu.hamburguer_menu_options, popup.menu)
+
+        // Inflar menú diferente según el rol
+        val menuRes = if (isAdmin) {
+            R.menu.hamburguer_menu_admin
+        } else {
+            R.menu.hamburguer_menu_options
+        }
+
+        popup.menuInflater.inflate(menuRes, popup.menu)
 
         // Forzar a mostrar íconos
         try {
@@ -64,12 +76,27 @@ class MainActivity : AppCompatActivity() {
                     replaceFragment(AgendarCitaFragment())
                     true
                 }
-
                 R.id.nav_revisar_citas -> {
                     replaceFragment(RevisarCitasFragment())
                     true
                 }
-
+                // Opciones del admin
+                R.id.nav_admin_dashboard -> {
+                    replaceFragment(AdminDashboardFragment())
+                    true
+                }
+                R.id.nav_gestion_citas -> {
+                    replaceFragment(AdminGestionCitasFragment())
+                    true
+                }
+                R.id.nav_gestion_clientes -> {
+                    replaceFragment(AdminGestionClientesFragment())
+                    true
+                }
+                R.id.nav_reportes -> {
+                    replaceFragment(AdminReportesFragment())
+                    true
+                }
                 else -> false
             }
         }
@@ -108,6 +135,26 @@ class MainActivity : AppCompatActivity() {
         popup.show()
     }
 
+    private fun loadInitialFragment() {
+        // Fragment inicial según el rol
+        val fragment = if (isAdmin) {
+            AdminDashboardFragment()
+        } else {
+            HomeFragment()
+        }
+
+        if (supportFragmentManager.findFragmentById(R.id.fragment_container) == null) {
+            replaceFragment(fragment)
+        }
+    }
+
+    private fun replaceFragment(fragment: Fragment) {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragment_container, fragment)
+            .addToBackStack(null)
+            .commit()
+    }
+
     private fun showLogoutConfirmation() {
         android.app.AlertDialog.Builder(this)
             .setTitle("Cerrar Sesión")
@@ -120,23 +167,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun performLogout() {
-        // Aquí va la lógica real de logout
-        // Por ahora solo cerramos esta activity
+        // Limpiar solo los datos de sesión, mantener los datos del usuario
+        val editor = sharedPreferences.edit()
+        editor.remove("is_admin")
+        editor.remove("user_role")
+        editor.apply()
+
         finish()
     }
-
-    private fun loadInitialFragment() {
-        // Fragment inicial que se muestra al abrir la app
-        if (supportFragmentManager.findFragmentById(R.id.fragment_container) == null) {
-            replaceFragment(HomeFragment())
-        }
-    }
-
-    private fun replaceFragment(fragment: Fragment) {
-        supportFragmentManager.beginTransaction()
-            .replace(R.id.fragment_container, fragment)
-            .addToBackStack(null)
-            .commit()
-    }
-
 }

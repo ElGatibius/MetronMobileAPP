@@ -90,7 +90,7 @@ class DetalleCitaFragment : Fragment() {
     }
 
     companion object {
-        private const val ARG_CITA = "cita"
+        const val ARG_CITA = "cita"
 
         fun newInstance(cita: Cita): DetalleCitaFragment {
             val fragment = DetalleCitaFragment()

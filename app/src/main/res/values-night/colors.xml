@@ -4,4 +4,8 @@
     <color name="inputsBackground">#E6E0E9</color>
     <color name="light_background">#ECE6F0</color>
     <color name="vinoTintoLighter">#A83232</color>
+    <color name="naranja">#FFA000</color>
+    <color name="azul">#2196F3</color>
+    <color name="verde">#4CAF50</color>
+    <color name="rojo">#F44336</color>
 </resources>

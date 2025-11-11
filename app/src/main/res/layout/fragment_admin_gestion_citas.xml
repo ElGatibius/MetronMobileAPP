@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gestión de Citas"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/black" />
+
+    <!-- Filtros -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filtrar por estado:"
+            android:textSize="14sp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/black" />
+
+        <Spinner
+            android:id="@+id/spinner_filtro_estado"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_contador_citas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total: 0 citas"
+            android:textSize="12sp"
+            android:layout_marginStart="16dp"
+            android:textColor="@android:color/darker_gray" />
+
+    </LinearLayout>
+
+    <!-- Lista de citas -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_citas_admin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Mensaje cuando no hay citas -->
+    <TextView
+        android:id="@+id/tv_sin_citas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No hay citas para mostrar"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/black" />
+
+</LinearLayout>

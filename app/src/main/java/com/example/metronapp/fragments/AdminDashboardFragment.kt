@@ -34,11 +34,11 @@ class AdminDashboardFragment : Fragment() {
         }
 
         binding.btnGestionClientes.setOnClickListener {
-            //navigateToGestionClientes()
+            navigateToGestionClientes()
         }
 
         binding.btnReportes.setOnClickListener {
-           // navigateToReportes()
+           navigateToReportes()
         }
     }
 
@@ -58,7 +58,7 @@ class AdminDashboardFragment : Fragment() {
             .addToBackStack(null)
             .commit()
     }
-/**
+
     private fun navigateToGestionClientes() {
         val fragment = AdminGestionClientesFragment()
         parentFragmentManager.beginTransaction()
@@ -74,7 +74,7 @@ class AdminDashboardFragment : Fragment() {
             .addToBackStack(null)
             .commit()
     }
-**/
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

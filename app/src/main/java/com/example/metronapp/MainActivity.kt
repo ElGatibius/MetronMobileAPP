@@ -90,11 +90,11 @@ class MainActivity : AppCompatActivity() {
                     true
                 }
                 R.id.nav_gestion_clientes -> {
-                    //replaceFragment(AdminGestionClientesFragment())
+                    replaceFragment(AdminGestionClientesFragment())
                     true
                 }
                 R.id.nav_reportes -> {
-                    //replaceFragment(AdminReportesFragment())
+                    replaceFragment(AdminReportesFragment())
                     true
                 }
                 else -> false

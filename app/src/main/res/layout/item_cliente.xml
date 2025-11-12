@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    android:layout_margin="8dp"
+    android:background="@color/light_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/light_background">
+
+        <!-- Razón Social -->
+        <TextView
+            android:id="@+id/tv_razon_social"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gasolinera Los Andes"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+        <!-- Representante -->
+        <TextView
+            android:id="@+id/tv_rep_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Carlos Andrade"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="4dp" />
+
+        <!-- Email -->
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="andes@gasolineras.com"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="4dp" />
+
+        <!-- Información adicional -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tv_nit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="NIT: 123456789-0"
+                android:textSize="12sp"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/tv_total_citas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 citas"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/vinoTinto"
+                android:background="@drawable/citas_count_background"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="2dp" />
+
+        </LinearLayout>
+
+        <!-- Fecha de registro -->
+        <TextView
+            android:id="@+id/tv_fecha_registro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrado: 15 Agosto 2024"
+            android:textSize="11sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="4dp" />
+
+        <!-- Indicador de toque -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Toca para ver detalles →"
+            android:textSize="10sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="8dp"
+            android:gravity="end" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

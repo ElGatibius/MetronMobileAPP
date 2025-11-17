@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Gestión de Citas"
+        android:text="@string/gesti_n_de_citas"
         android:textSize="24sp"
         android:textStyle="bold"
         android:gravity="center"
@@ -28,7 +28,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Filtrar por estado:"
+            android:text="@string/filtrar_por_estado"
             android:textSize="14sp"
             android:layout_marginEnd="8dp"
             android:textColor="@color/black" />
@@ -43,7 +43,7 @@
             android:id="@+id/tv_contador_citas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Total: 0 citas"
+            android:text="@string/total_0_citas"
             android:textSize="12sp"
             android:layout_marginStart="16dp"
             android:textColor="@android:color/darker_gray" />
@@ -61,7 +61,7 @@
         android:id="@+id/tv_sin_citas"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="No hay citas para mostrar"
+        android:text="@string/no_hay_citas_para_mostrar"
         android:textSize="18sp"
         android:gravity="center"
         android:visibility="gone"

@@ -22,7 +22,7 @@
         android:id="@+id/tv_contador_clientes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Total: 0 clientes"
+        android:text="@string/total_0_clientes"
         android:textSize="14sp"
         android:textColor="@android:color/darker_gray"
         android:layout_marginBottom="16dp" />
@@ -38,7 +38,7 @@
         android:id="@+id/tv_sin_clientes"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="No hay clientes registrados"
+        android:text="@string/no_hay_clientes_registrados"
         android:textSize="18sp"
         android:gravity="center"
         android:visibility="gone"

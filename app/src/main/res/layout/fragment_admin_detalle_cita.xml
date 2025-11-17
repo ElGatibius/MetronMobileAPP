@@ -16,7 +16,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Detalle de Cita - Administración"
+            android:text="@string/detalle_de_cita_administraci_n"
             android:textSize="20sp"
             android:textStyle="bold"
             android:gravity="center"
@@ -44,7 +44,7 @@
                     android:id="@+id/tv_estado_actual"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Estado: Pendiente"
+                    android:text="@string/estado_pendiente"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:paddingHorizontal="12dp"
@@ -58,7 +58,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Información del Cliente"
+                    android:text="@string/informaci_n_del_cliente"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:textColor="@color/black"
@@ -68,7 +68,7 @@
                     android:id="@+id/tv_cliente_nombre"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Gasolinera Los Andes"
+                    android:text="@string/gasolinera_los_andes"
                     android:textSize="14sp"
                     android:textColor="@color/black" />
 
@@ -76,7 +76,7 @@
                     android:id="@+id/tv_cliente_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="andes@gasolineras.com"
+                    android:text="@string/andes_gasolineras_com"
                     android:textSize="14sp"
                     android:textColor="@android:color/darker_gray"
                     android:layout_marginBottom="16dp" />
@@ -85,7 +85,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Detalles de la Cita"
+                    android:text="@string/detalles_de_la_cita"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:textColor="@color/black"
@@ -95,7 +95,7 @@
                     android:id="@+id/tv_tipo_servicio"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Calibración de surtidores"
+                    android:text="@string/calibraci_n_de_surtidores"
                     android:textSize="14sp"
                     android:textColor="@color/black" />
 
@@ -103,7 +103,7 @@
                     android:id="@+id/tv_tipo_agendamiento"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Emergencia"
+                    android:text="@string/emergencia"
                     android:textSize="14sp"
                     android:textColor="@color/black" />
 
@@ -111,7 +111,7 @@
                     android:id="@+id/tv_fecha_hora"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Septiembre 11 - 10:00 AM"
+                    android:text="@string/septiembre_11_10_00_am"
                     android:textSize="14sp"
                     android:textColor="@color/black"
                     android:layout_marginBottom="8dp" />
@@ -121,7 +121,7 @@
                     android:id="@+id/tv_ubicacion"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="EDS Suba"
+                    android:text="@string/eds_suba"
                     android:textSize="14sp"
                     android:textColor="@color/black"
                     android:layout_marginBottom="16dp" />
@@ -130,7 +130,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Descripción:"
+                    android:text="@string/descripci_n"
                     android:textSize="14sp"
                     android:textStyle="bold"
                     android:textColor="@color/black" />
@@ -139,7 +139,7 @@
                     android:id="@+id/tv_descripcion"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Problema con la medición en surtidor #3"
+                    android:text="@string/problema_con_la_medici_n_en_surtidor_3"
                     android:textSize="14sp"
                     android:textColor="@color/black"
                     android:layout_marginBottom="16dp"
@@ -149,7 +149,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Costo:"
+                    android:text="@string/costo"
                     android:textSize="14sp"
                     android:textStyle="bold"
                     android:textColor="@color/black" />
@@ -158,7 +158,7 @@
                     android:id="@+id/tv_costo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="$150.000"
+                    android:text="@string/_150_000"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:textColor="@color/vinoTinto" />
@@ -171,7 +171,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cambiar Estado"
+            android:text="@string/cambiar_estado"
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_marginBottom="16dp"
@@ -188,7 +188,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Confirmar"
+                android:text="@string/confirmar"
                 android:layout_marginEnd="4dp"
                 android:backgroundTint="#4CAF50"
                 android:textColor="@android:color/white"
@@ -199,7 +199,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Completar"
+                android:text="@string/completar"
                 android:layout_marginStart="4dp"
                 android:layout_marginEnd="4dp"
                 android:backgroundTint="#2196F3"
@@ -211,7 +211,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Cancelar"
+                android:text="@string/cancelar"
                 android:layout_marginStart="4dp"
                 android:backgroundTint="#F44336"
                 android:textColor="@android:color/white"
@@ -223,7 +223,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Acciones Administrativas"
+            android:text="@string/acciones_administrativas"
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_marginBottom="16dp"
@@ -233,7 +233,7 @@
             android:id="@+id/btn_contactar_cliente"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Contactar al Cliente"
+            android:text="@string/contactar_al_cliente"
             android:layout_marginBottom="8dp"
             android:backgroundTint="@color/vinoTinto"
             android:textColor="@android:color/white"
@@ -244,7 +244,7 @@
             android:id="@+id/btn_editar_costo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Editar Costo"
+            android:text="@string/editar_costo"
             android:layout_marginBottom="8dp"
             android:backgroundTint="@color/vinoTinto"
             android:textColor="@android:color/white"
@@ -255,7 +255,7 @@
             android:id="@+id/btn_eliminar_cita"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Eliminar Cita"
+            android:text="@string/eliminar_cita"
             android:backgroundTint="#D32F2F"
             android:textColor="@android:color/white"
             android:drawablePadding="8dp"

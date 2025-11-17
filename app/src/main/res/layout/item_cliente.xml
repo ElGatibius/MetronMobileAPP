@@ -20,7 +20,7 @@
             android:id="@+id/tv_razon_social"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Gasolinera Los Andes"
+            android:text="@string/gasolinera_los_andes"
             android:textSize="16sp"
             android:textStyle="bold"
             android:textColor="@color/black" />
@@ -30,7 +30,7 @@
             android:id="@+id/tv_rep_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Carlos Andrade"
+            android:text="@string/carlos_andrade"
             android:textSize="14sp"
             android:textColor="@color/black"
             android:layout_marginTop="4dp" />
@@ -40,7 +40,7 @@
             android:id="@+id/tv_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="andes@gasolineras.com"
+            android:text="@string/andes_gasolineras_com"
             android:textSize="14sp"
             android:textColor="@android:color/darker_gray"
             android:layout_marginTop="4dp" />
@@ -57,7 +57,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="NIT: 123456789-0"
+                android:text="@string/nit_123456789_0"
                 android:textSize="12sp"
                 android:textColor="@android:color/darker_gray" />
 
@@ -65,7 +65,7 @@
                 android:id="@+id/tv_total_citas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="5 citas"
+                android:text="@string/_5_citas"
                 android:textSize="12sp"
                 android:textStyle="bold"
                 android:textColor="@color/vinoTinto"
@@ -80,7 +80,7 @@
             android:id="@+id/tv_fecha_registro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Registrado: 15 Agosto 2024"
+            android:text="@string/registrado_15_agosto_2024"
             android:textSize="11sp"
             android:textColor="@android:color/darker_gray"
             android:layout_marginTop="4dp" />
@@ -89,7 +89,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Toca para ver detalles →"
+            android:text="@string/toca_para_ver_detalles"
             android:textSize="10sp"
             android:textColor="@android:color/darker_gray"
             android:layout_marginTop="8dp"

@@ -88,6 +88,16 @@
             tools:layout_editor_absoluteY="501dp"
             android:layout_marginTop="15dp"/>
 
+        <Button
+            android:id="@+id/loginButtonGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/vinoTinto"
+            android:text="@string/iniciar_sesion_con_google"
+            tools:layout_editor_absoluteX="138dp"
+            tools:layout_editor_absoluteY="501dp"
+            android:layout_marginTop="15dp"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

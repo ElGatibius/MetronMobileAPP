@@ -3,14 +3,31 @@ package com.example.metronapp
 import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInClient
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
+import com.google.android.gms.common.api.ApiException
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.GoogleAuthProvider
 
+@Suppress("DEPRECATION")
 class LoginActivity : AppCompatActivity() {
+
+    private lateinit var btnGoogle: Button
+    private lateinit var googleSignInClient: GoogleSignInClient
+    private lateinit var auth: FirebaseAuth
     private lateinit var sharedPreferences: SharedPreferences
+
+    companion object{
+        private const val TAG = "LoginActivity"
+        private const val RC_SIGN_IN = 9001
+    }
 
     // Credenciales del admin por defecto
     private val adminEmail = "admin@metron.com"
@@ -45,7 +62,62 @@ class LoginActivity : AppCompatActivity() {
             val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
         }
+
+        //Programacion de ingreso google
+        btnGoogle = findViewById(R.id.loginButtonGoogle)
+        auth = FirebaseAuth.getInstance()
+        val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+            .requestIdToken("822649312545-1fniv3n958b5soejnuqlot4ilf3fftp7.apps.googleusercontent.com")
+            .requestEmail()
+            .build()
+
+        googleSignInClient = GoogleSignIn.getClient(this, gso) // Inicializada aquí
+
+
+        btnGoogle.setOnClickListener {
+            signInWithGoogle()
+
+        }
+
     }
+    private fun signInWithGoogle() {
+        val signInIntent = googleSignInClient.signInIntent
+        startActivityForResult(signInIntent, RC_SIGN_IN)
+    }
+
+    private fun firebaseAuthWithGoogle(idToken: String) {
+        val credential = GoogleAuthProvider.getCredential(idToken, null)
+        auth.signInWithCredential(credential)
+            .addOnCompleteListener(this) { task ->
+                if (task.isSuccessful) {
+                    Log.d(TAG, "signInWithCredential:success")
+                    Toast.makeText(this, "Login exitoso", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this, MainActivity::class.java)
+                    startActivity(intent)
+                    finish()
+                } else {
+                    Log.w(TAG, "signInWithCredential:failure", task.exception)
+                    Toast.makeText(this, "Login fallido", Toast.LENGTH_SHORT).show()
+                }
+            }
+    }
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        if (requestCode == RC_SIGN_IN) {
+            val task = GoogleSignIn.getSignedInAccountFromIntent(data)
+            try {
+                val account = task.getResult(ApiException::class.java)!!
+                Log.d(TAG, "firebaseAuthWithGoogle:" + account.id)
+                firebaseAuthWithGoogle(account.idToken!!)
+            }catch (e: ApiException){
+                Log.w(TAG, "Google sign in failed", e)
+                Toast.makeText(this, "Google sign in failed", Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
+
+
 
     private fun validarLogin(
         emailAddress: String?,

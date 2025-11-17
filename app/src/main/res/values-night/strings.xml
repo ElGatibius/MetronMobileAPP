@@ -68,4 +68,7 @@
     <string name="fecha_cita">Septiembre 11</string>
     <string name="cita_descripcion">Calibración de surtidores</string>
     <string name="toca_para_ver_detalles">Toca para ver detalles →</string>
+    <string name="iniciar_sesion_con_google">Iniciar sesion con Google</string>
+    <string name="gasolinera_los_andes">Gasolinera Los Andes</string>
+    <string name="tip">💡 Tip: Los reportes se generan en tiempo real con los datos actuales del sistema.</string>
 </resources>

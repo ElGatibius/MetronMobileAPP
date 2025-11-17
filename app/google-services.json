@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "822649312545",
+    "project_id": "taller-2-12daa",
+    "storage_bucket": "taller-2-12daa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:822649312545:android:8805f8cd218e5b3cf8da60",
+        "android_client_info": {
+          "package_name": "com.example.metronapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "822649312545-1fniv3n958b5soejnuqlot4ilf3fftp7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeCElSQJ8sHICTZnV48XJ-MDM3GGUMkw8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "822649312545-1fniv3n958b5soejnuqlot4ilf3fftp7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

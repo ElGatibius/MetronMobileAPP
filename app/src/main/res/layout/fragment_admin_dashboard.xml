@@ -16,7 +16,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Panel de Administración"
+            android:text="@string/panel_de_administraci_n"
             android:textSize="24sp"
             android:textStyle="bold"
             android:gravity="center"
@@ -27,7 +27,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Estadísticas Generales"
+            android:text="@string/estad_sticas_generales"
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_marginBottom="16dp"
@@ -59,7 +59,7 @@
                         android:id="@+id/tv_total_citas"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="25"
+                        android:text="@string/_25"
                         android:textSize="24sp"
                         android:textStyle="bold"
                         android:textColor="@color/vinoTinto" />
@@ -67,7 +67,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Citas Totales"
+                        android:text="@string/citas_totales"
                         android:textSize="12sp"
                         android:textColor="@color/black" />
 

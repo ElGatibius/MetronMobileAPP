@@ -16,7 +16,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Generar Reportes"
+            android:text="@string/generar_reportes"
             android:textSize="24sp"
             android:textStyle="bold"
             android:gravity="center"
@@ -27,7 +27,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Tipo de Reporte"
+            android:text="@string/tipo_de_reporte"
             android:textSize="16sp"
             android:textStyle="bold"
             android:layout_marginBottom="8dp"
@@ -43,7 +43,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Período"
+            android:text="@string/per_odo"
             android:textSize="16sp"
             android:textStyle="bold"
             android:layout_marginBottom="8dp"
@@ -81,9 +81,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Exportar PDF"
+                android:text="@string/exportar_pdf"
                 android:layout_marginEnd="8dp"
-                android:backgroundTint="#4CAF50"
+                android:backgroundTint="@color/Verde"
                 android:textColor="@android:color/white"
                 android:textSize="14sp"
                 android:drawablePadding="4dp"
@@ -94,7 +94,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Compartir"
+                android:text="@string/compartir"
                 android:layout_marginStart="8dp"
                 android:backgroundTint="@color/vinoTinto"
                 android:textColor="@android:color/white"
@@ -123,7 +123,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="💡 Tip: Los reportes se generan en tiempo real con los datos actuales del sistema."
+                    android:text="@string/tip"
                     android:textSize="12sp"
                     android:textColor="@android:color/darker_gray"
                     android:lineSpacingExtra="2dp" />
